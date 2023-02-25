@@ -10,10 +10,10 @@ import {
 } from "./skyclientRender.js";
 
 const packsNetwork = fetch(
-  "https://raw.githubusercontent.com/SkyblockClient/SkyblockClient-REPO/main/files/packs.json"
+  "https://raw.githubusercontent.com/stef-the/test-data/main/packs.json"
 );
 const modsNetwork = fetch(
-  "https://raw.githubusercontent.com/SkyblockClient/SkyblockClient-REPO/main/files/mods.json"
+  "https://raw.githubusercontent.com/stef-the/test-data/main/mods.json"
 );
 packsNetwork.then((response) => response.json()).then((data) => (window.packs = data));
 modsNetwork.then((response) => response.json()).then((data) => (window.mods = data));
