@@ -37,6 +37,13 @@ class FolderInfo extends HTMLElement {
             "https://raw.githubusercontent.com/stef-the/test-data/blob/main/forge-1.12.2-14.23.5.2860.jar"
           );
         })(),
+        (async () => {
+          const libsFolder = await window.chosen.getFolder(
+            "skyclient/mcpipy",
+            true
+          );
+        })(),
+        //await window.chosenGameRoot.getFolder("mcpipy", true);
       ]);
       // Find SkyClient folder path
       let skyclientFolderPath = window.chosen.path;
